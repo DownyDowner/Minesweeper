@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da1f343f-a234-4bab-b097-4c40bada74b6" name="Changes" comment="up" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2eOn0qEZn9vONi0K4h7aTDRj7ro" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/bobov/Documents/bloc2V2/POO/libJavaFX/javafx-sdk-22.0.1/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da1f343f-a234-4bab-b097-4c40bada74b6" name="Changes" comment="" />
+      <created>1711784273163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711784273163</updated>
+      <workItem from="1711784274215" duration="429000" />
+      <workItem from="1711784956289" duration="21000" />
+      <workItem from="1711874821734" duration="5041000" />
+      <workItem from="1711880559276" duration="2156000" />
+      <workItem from="1711884177662" duration="3401000" />
+      <workItem from="1711890821703" duration="3047000" />
+      <workItem from="1711895730088" duration="5177000" />
+      <workItem from="1711900959848" duration="224000" />
+      <workItem from="1711901938649" duration="1850000" />
+      <workItem from="1711910136156" duration="84000" />
+      <workItem from="1711954119832" duration="6050000" />
+      <workItem from="1712072958550" duration="705000" />
+      <workItem from="1712074411261" duration="468000" />
+      <workItem from="1712075447472" duration="143000" />
+      <workItem from="1712081144690" duration="453000" />
+      <workItem from="1712159007068" duration="45000" />
+      <workItem from="1713021721383" duration="1973000" />
+      <workItem from="1714405041725" duration="12000" />
+      <workItem from="1714405223909" duration="941000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implementation for board initialization">
+      <option name="closed" value="true" />
+      <created>1711881688031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711881688031</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add(Board): add docs for methods">
+      <option name="closed" value="true" />
+      <created>1711882498061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711882498061</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add: Show board">
+      <option name="closed" value="true" />
+      <created>1711885470985</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711885470985</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactor: Model -&gt; Models">
+      <option name="closed" value="true" />
+      <created>1711885585361</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711885585361</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor toString based on State">
+      <option name="closed" value="true" />
+      <created>1711886645470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711886645470</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add: State pattern for cells">
+      <option name="closed" value="true" />
+      <created>1711887294167</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711887294167</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add: flag">
+      <option name="closed" value="true" />
+      <created>1711893848596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711893848596</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add: main to test">
+      <option name="closed" value="true" />
+      <created>1711898059887</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711898059887</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add: change state in discover">
+      <option name="closed" value="true" />
+      <created>1711898689911</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711898689911</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add: add Neighbours for empty cells (need to be fix)">
+      <option name="closed" value="true" />
+      <created>1711901173865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711901173865</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix: discover Neighbours">
+      <option name="closed" value="true" />
+      <created>1711903789694</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711903789694</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactor: Remove unused method">
+      <option name="closed" value="true" />
+      <created>1711910203184</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711910203184</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add: the game could be finished">
+      <option name="closed" value="true" />
+      <created>1711956379120</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1711956379120</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add: docs">
+      <option name="closed" value="true" />
+      <created>1711957756415</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711957756415</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactor(main)">
+      <option name="closed" value="true" />
+      <created>1711957829746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711957829746</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Better display for the board">
+      <option name="closed" value="true" />
+      <created>1711960139887</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711960139887</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Remove instance of">
+      <option name="closed" value="true" />
+      <created>1712073653355</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712073653355</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add docs">
+      <option name="closed" value="true" />
+      <created>1712074876781</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712074876781</updated>
+    </task>
+    <task id="LOCAL-00019" summary="up">
+      <option name="closed" value="true" />
+      <created>1712075576286</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712075576286</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implementation for board initialization" />
+    <MESSAGE value="Add(Board): add docs for methods" />
+    <MESSAGE value="Add: Show board" />
+    <MESSAGE value="Refactor: Model -&gt; Models" />
+    <MESSAGE value="Refactor toString based on State" />
+    <MESSAGE value="Add: State pattern for cells" />
+    <MESSAGE value="Add: flag" />
+    <MESSAGE value="Add: main to test" />
+    <MESSAGE value="Add: change state in discover" />
+    <MESSAGE value="Add: add Neighbours for empty cells (need to be fix)" />
+    <MESSAGE value="Fix: discover Neighbours" />
+    <MESSAGE value="Refactor: Remove unused method" />
+    <MESSAGE value="Add: the game could be finished" />
+    <MESSAGE value="Add: docs" />
+    <MESSAGE value="Refactor(main)" />
+    <MESSAGE value="Better display for the board" />
+    <MESSAGE value="Remove instance of" />
+    <MESSAGE value="Add docs" />
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
+  </component>
+</project>
