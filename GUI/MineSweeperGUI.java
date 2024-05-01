@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -22,7 +23,6 @@ public class MineSweeperGUI extends Application {
     @Override
     public void start(Stage primaryStage) {
         game = new Game("Player");
-
         timerLabel = new Label("Temps écoulé : 0 secondes");
         timeline = new Timeline(new KeyFrame(Duration.seconds(1), e -> updateTimer()));
         timeline.setCycleCount(Animation.INDEFINITE);
@@ -31,9 +31,6 @@ public class MineSweeperGUI extends Application {
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(5);
         gridPane.setVgap(5);
-
-        GridPane.setConstraints(timerLabel, 0, GameConstants.ROWS);
-        gridPane.getChildren().add(timerLabel);
 
         for (int row = 0; row < GameConstants.ROWS; row++) {
             for (int col = 0; col < GameConstants.COLS; col++) {
@@ -49,7 +46,14 @@ public class MineSweeperGUI extends Application {
             }
         }
 
-        Scene scene = new Scene(gridPane);
+        VBox headerBox = new VBox(10);
+        headerBox.setPadding(new Insets(10));
+        headerBox.getChildren().addAll(timerLabel);
+
+        VBox mainBox = new VBox();
+        mainBox.getChildren().addAll(headerBox, gridPane);
+
+        Scene scene = new Scene(mainBox);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Démineur");
         timeline.play();

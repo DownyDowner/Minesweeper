@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da1f343f-a234-4bab-b097-4c40bada74b6" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/GUI/MineSweeperGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MinesweeperGraphic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MinesweeperGraphic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MinesweeperGraphic/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/MineSweeperGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/MineSweeperGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +111,7 @@
       <workItem from="1713021721383" duration="1973000" />
       <workItem from="1714405041725" duration="12000" />
       <workItem from="1714405223909" duration="1935000" />
-      <workItem from="1714588339282" duration="1673000" />
+      <workItem from="1714588339282" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation for board initialization">
       <option name="closed" value="true" />
