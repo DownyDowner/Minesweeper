@@ -106,4 +106,8 @@ public class Game {
             stopwatch.stop();
         }
     }
+
+    public Stopwatch getStopwatch() {
+        return stopwatch;
+    }
 }
