@@ -6,10 +6,13 @@ import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.GridPane;
@@ -82,6 +85,21 @@ public class MineSweeperGUI extends Application {
                 }
             }
         }
+        if (game.isFinished()) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Fin de la partie");
+            alert.setHeaderText(null);
+            if (game.isWon()) {
+                alert.setContentText("Félicitations, vous avez gagné !");
+            } else {
+                alert.setContentText("Désolé, vous avez perdu.");
+            }
+            alert.showAndWait().ifPresent(response -> {
+                if (response == ButtonType.OK) {
+                    Platform.exit();
+                }
+            });
+        }
     }
 
     private void updateButtonAppearance(Button button, int row, int col) {
@@ -99,7 +117,7 @@ public class MineSweeperGUI extends Application {
             }
         }
 
-        if (game.getCell(row, col).isMined() && game.isFinished()) {
+        if (game.isFinished() && game.getCell(row, col).isMined()) {
             if (game.isWon())
                 button.setStyle("-fx-background-color: green;");
             else
