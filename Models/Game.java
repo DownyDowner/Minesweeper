@@ -59,13 +59,16 @@ public class Game {
     public void discover(int row, int col) {
         if (!stopwatch.isRunning())
             stopwatch.start();
-        board.discover(row, col);
-        Cell cell = board.getCell(row, col);
-        isFinished = cell.isMined();
-        if (isFinished)
-            stopwatch.stop();
-        else
-            checkGameWon();
+        Cell cell = getCell(row, col);
+        if (!cell.isFlagged() && !cell.isDiscovered()) {
+            board.discover(row, col);
+            cell = board.getCell(row, col);
+            isFinished = cell.isMined();
+            if (isFinished)
+                stopwatch.stop();
+            else
+                checkGameWon();
+        }
     }
 
     /**
@@ -109,5 +112,9 @@ public class Game {
 
     public Stopwatch getStopwatch() {
         return stopwatch;
+    }
+
+    public Cell getCell(int row, int col) {
+        return board.getCell(row, col);
     }
 }

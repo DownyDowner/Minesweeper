@@ -7,6 +7,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -20,6 +21,7 @@ public class MineSweeperGUI extends Application {
     private Game game;
     private Label timerLabel;
     private Timeline timeline;
+    private GridPane gridPane;
     @Override
     public void start(Stage primaryStage) {
         game = new Game("Player");
@@ -27,7 +29,7 @@ public class MineSweeperGUI extends Application {
         timeline = new Timeline(new KeyFrame(Duration.seconds(1), e -> updateTimer()));
         timeline.setCycleCount(Animation.INDEFINITE);
 
-        GridPane gridPane = new GridPane();
+        gridPane = new GridPane();
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(5);
         gridPane.setVgap(5);
@@ -61,11 +63,57 @@ public class MineSweeperGUI extends Application {
     }
 
     private void handleButtonClick(int row, int col, MouseButton button) {
-        if (button == MouseButton.PRIMARY) {
-            game.discover(row, col);
-        } else if (button == MouseButton.SECONDARY) {
-            game.flag(row, col);
+        if (!game.isFinished()) {
+            if (button == MouseButton.PRIMARY) {
+                game.discover(row, col);
+            } else if (button == MouseButton.SECONDARY) {
+                game.flag(row, col);
+            }
+            updateButtonsAppearance();
         }
+    }
+
+    private void updateButtonsAppearance() {
+        for (int row = 0; row < GameConstants.ROWS; row++) {
+            for (int col = 0; col < GameConstants.COLS; col++) {
+                Button button = getButtonAt(row, col);
+                if (button != null) {
+                    updateButtonAppearance(button, row, col);
+                }
+            }
+        }
+    }
+
+    private void updateButtonAppearance(Button button, int row, int col) {
+        if (game.getCell(row, col).isDiscovered()) {
+            button.setDisable(true);
+            button.setText(game.getCell(row, col).toString());
+        } else {
+            if (game.getCell(row, col).isFlagged()) {
+                button.setText("P");
+                button.setStyle("-fx-background-color: orange;");
+            } else {
+                button.setDisable(false);
+                button.setText("");
+                button.setStyle("");
+            }
+        }
+
+        if (game.getCell(row, col).isMined() && game.isFinished()) {
+            if (game.isWon())
+                button.setStyle("-fx-background-color: green;");
+            else
+                button.setStyle("-fx-background-color: red;");
+        }
+    }
+
+    private Button getButtonAt(int row, int col) {
+        for (Node node : gridPane.getChildren()) {
+            if (GridPane.getRowIndex(node) == row && GridPane.getColumnIndex(node) == col) {
+                return (Button) node;
+            }
+        }
+        return null;
     }
 
     private void updateTimer() {

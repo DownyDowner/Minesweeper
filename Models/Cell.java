@@ -44,6 +44,15 @@ public abstract class Cell {
     }
 
     /**
+     * Checks if the cell is flagged.
+     *
+     * @return True if the cell is flagged, otherwise false
+     */
+    public boolean isFlagged() {
+        return stateCell.isFlagged();
+    }
+
+    /**
      * Flags the cell.
      * Delegates the flag action to the current state of the cell.
      */
