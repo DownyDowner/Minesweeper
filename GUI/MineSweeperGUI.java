@@ -65,6 +65,13 @@ public class MineSweeperGUI extends Application {
         primaryStage.show();
     }
 
+    /**
+     * Handles mouse button clicks on grid buttons.
+     *
+     * @param row     The row index of the clicked button
+     * @param col     The column index of the clicked button
+     * @param button  The MouseButton clicked (LEFT or RIGHT)
+     */
     private void handleButtonClick(int row, int col, MouseButton button) {
         if (!game.isFinished()) {
             if (button == MouseButton.PRIMARY) {
@@ -76,6 +83,9 @@ public class MineSweeperGUI extends Application {
         }
     }
 
+    /**
+     * Updates the appearance of buttons based on the game state.
+     */
     private void updateButtonsAppearance() {
         for (int row = 0; row < GameConstants.ROWS; row++) {
             for (int col = 0; col < GameConstants.COLS; col++) {
@@ -102,6 +112,13 @@ public class MineSweeperGUI extends Application {
         }
     }
 
+    /**
+     * Updates the appearance of a specific button based on the cell state.
+     *
+     * @param button  The button to update
+     * @param row     The row index of the cell
+     * @param col     The column index of the cell
+     */
     private void updateButtonAppearance(Button button, int row, int col) {
         if (game.getCell(row, col).isDiscovered()) {
             button.setDisable(true);
@@ -125,6 +142,13 @@ public class MineSweeperGUI extends Application {
         }
     }
 
+    /**
+     * Gets the button at the specified position in the grid.
+     *
+     * @param row  The row index of the button
+     * @param col  The column index of the button
+     * @return     The button at the specified position, or null if not found
+     */
     private Button getButtonAt(int row, int col) {
         for (Node node : gridPane.getChildren()) {
             if (GridPane.getRowIndex(node) == row && GridPane.getColumnIndex(node) == col) {
@@ -134,6 +158,9 @@ public class MineSweeperGUI extends Application {
         return null;
     }
 
+    /**
+     * Updates the timer label.
+     */
     private void updateTimer() {
         long elapsedTime = game.getStopwatch().getElapsedTimeInSeconds();
         timerLabel.setText("Temps écoulé : " + elapsedTime + " secondes");
